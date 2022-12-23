@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------------------
+END VARIABLES & SETTINGS
+--------------------*/
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.color_red {
+  color: #95191C;
+}
+
+#modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  border-radius: 10px;
+  z-index: 10;
+  padding: 10px;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.modal__title {
+  font-size: 22px;
+}
+.modal__close {
+  color: #95191C;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal__card {
+  background-color: white;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.modal__input {
+  border: solid 2px #f2f2f2;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+  margin-bottom: 10px;
+}
+.modal__input:focus {
+  border: solid 1px #95191C;
+}
+.modal__textarea {
+  border: solid 2px #f2f2f2;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0px;
+  margin-bottom: 10px;
+  min-height: 100px;
+  max-height: 100px;
+}
+.modal__textarea:focus {
+  border: solid 1px #95191C;
+}
+.modal__button {
+  background-color: #95191C;
+  cursor: pointer;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.calendar {
+  border: none;
+  cursor: pointer;
+  background-color: #95191C;
+  color: #ffffff;
+}
+
+.msgError {
+  color: #95191C;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error__title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.error__message {
+  font-size: 20px;
+  text-align: center;
+}
+.error__button {
+  background-color: #95191C;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 7px 15px;
+  margin-top: 20px;
+}
